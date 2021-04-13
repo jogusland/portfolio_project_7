@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body class="grid-container">
+    <header class="header">
+        <h1>WebApp™</h1>
+        <div>
+            <a><img src="svgs/bell.svg"></a> <!--not sure if I'm supposed to use svg tag here-->
+            <div id="notifications">
+                <!-- container element for our notifications -->
+            </div>
+        </div>
+        <img src="images/member-1.jpg">
+        <h3>Student Name</h3>
+    </header>
+
+    <nav class="navigation">
+        <a><img src="svgs/home.svg" alt="home"></a>
+        <a><img src="svgs/bar-chart.svg" alt="bar chart"></a>
+        <a><img src="svgs/members.svg" alt="members"></a>
+        <a><img src="svgs/settings.svg" alt="settings"></a>
+    </nav>
+
+    <main class="main">
+        <div class="main-header">
+            <h2 class="headline">Dashboard</h2>
+            <div class="main-header-search">
+                <input type="search" placeholder="Search..." />
+            </div>
+            
+            <!-- alert banner -->
+            <div class="alert" id="alert">
+                <!-- JS will insert alert here -->
+            </div>
+        </div>
+
+        
+
+        <!-- line graph charts -->
+        <section class="traffic">
+            <div class="traffic-header">
+                <h3>Traffic</h3>
+                <ul class="traffic-nav">
+                    <li class="traffic-nav-link">Hourly</li>
+                    <li class="traffic-nav-link">Daily</li>
+                    <li class="traffic-nav-link">Weekly</li>
+                    <li class="traffic-nav-link" active>Monthly</li>
+                </ul>
+            </div>
+            <div class="widget-container-full">
+                <!-- element line graph will attach to -->
+                <canvas id="traffic-chart"></canvas>
+            </div>
+        </section>
+
+        <!-- bar graph -->
+
+        <section class="daily">
+            <h3>Daily Traffic</h3>
+            <div class="widget-container-half">
+                <canvas id="daily-chart"></canvas>
+            </div>
+        </section>
+
+        <!-- donut graph -->
+        <section class="mobile">
+            <h3>Mobile Users</h3>
+            <div class="widget-container-half">
+                <canvas id="mobile-chart"></canvas>
+            </div>
+        </section>
+
+        <!-- social stats -->
+        <div class="social">
+            <h2>Social Stats</h2>
+            <div class="social-container">
+                <div class="social-image">
+                    <!-- inline SVG -->
+                </div>
+                <div class="social-text">
+                    <p>Facebook</p>
+                    <p>10,320</p>
+                </div>
+            </div>
+            <div class="social-container">
+                <div class="social-image">
+                    <!-- inline SVG -->
+                </div>
+                <div class="social-text">
+                    <p>Instagram</p>
+                    <p>16,445</p>
+                </div>
+            </div>
+            <div class="social-container">
+                <div class="social-image">
+                    <!-- inline SVG -->
+                </div>
+                <div class="social-text">
+                    <p>Twitter</p>
+                    <p>22,189</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- new members widget-->
+        <section class="members">
+            <h3>New Members</h3>
+            <div class="members-container">
+                <img src="images/member-1.jpg" class="profile-image">
+                <div>
+                    <p>Victoria Chambers</p>
+                    <p><a href="#">victoria.chambers80@example.com</a></p>
+                </div>                    
+                <p>10/15/20</p>
+            </div>
+            <div class="new-member">
+                <img src="images/member-2.jpg" class="profile-image">
+                <div>
+                    <p>Dale Byrd</p>
+                    <p><a href="#">dale.byrd52@example.com</a></p>
+                </div>
+                <p>10/15/20</p>
+            </div>
+            <div class="new-member">
+                <img src="images/member-3.jpg" class="profile-image">
+                <div>
+                    <p>Dawn Wood</p>
+                    <p><a href="#">dawn.wood16@example.com</a></p>
+                </div>
+                <p>10/15/20</p>
+            </div>
+            <div class="new-member">
+                <img src="images/member-4.jpg" class="profile-image">
+                <div>
+                    <p>Dan Oliver</p>
+                    <p><a href="#">dan.oliver82@example.com</a></p>
+                </div>
+                <p>10/15/20</p>
+            </div>
+        </section>
+
+        <!-- recent activity widget -->
+        <section class="activity">
+            <h3>RECENT ACTIVITY</h3>
+            <div>
+                <img src="images/member-1.jpg">
+                <div>
+                    <p>Victoria Chambers commented on <strong>WebApp's SEO Tips</strong></p>
+                    <p>4 hours ago</p>
+                </div>
+            </div>
+            <div>
+                <img src="images/member-2.jpg">
+                <div>
+                    <p>Dale Byrd liked the post <strong>Facebook's Changes for 2021</strong></p>
+                    <p>5 hours ago</p>
+                </div>
+            </div>
+            <div>
+                <img src="images/member-3.jpg">
+                <div>
+                    <p>Dawn Wood commented on <strong>Facebook's Changes for 2021</strong></p>
+                    <p>5 hours ago</p>
+                </div>
+            </div>
+            <div>
+                <img src="images/member-4.jpg">
+                <div>
+                    <p>Dan Oliver posted <strong>WebApp's SEO Tips</strong></p>
+                    <p>1 day ago</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- messaging widget -->
+        <section class="message">
+            <h3>Message User</h3>
+            <form class="widget-container">
+                <input type="text" placeholder="Search for user" class="form-field" id="userField">
+                <textarea placeholder="Message for user" class="form-area" id="messageField"></textarea>
+                <button class="button-primary" id="send">Send</button>
+            </form>
+        </section>
+
+        <!-- settings -->
+        <section class="settings">
+            <h3>Settings</h3>
+            <!-- custom CSS toggle code-->
+            
+            <!-- custom CSS toggle code-->
+            
+            <select class="form-field" id="timezone">
+                <option disabled selected>Select a Timezone</option>
+                <option>Eastern</option>
+                <!-- more options -->
+            </select>
+            <div class="settings-button">
+                <button class="button-primary" id="save">Save</button>
+                <button class="button-disabled" id="cancel">Cancel</button>
+            </div>
+        </section>
+
+    </main> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.0/chart.min.js" integrity="sha512-RGbSeD/jDcZBWNsI1VCvdjcDULuSfWTtIva2ek5FtteXeSjLfXac4kqkDRHVGf1TwsXCAqPTF7/EYITD0/CTqw==" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -11,24 +11,24 @@
 <body class="grid-container">
     <header class="header">
         <h1>WebApp™</h1>
+        <a href="#"><img src="svgs/bell.svg" alt="bell"></a>  <!--not sure if I'm supposed to use svg tag here-->
         <div>
-            <a><img src="svgs/bell.svg"></a> <!--not sure if I'm supposed to use svg tag here-->
             <div id="notifications">
                 <!-- container element for our notifications -->
             </div>
         </div>
-        <img src="images/member-1.jpg">
+        <img src="images/member-1.jpg" id="profile-pic" class="profile-image ">
         <h3>Student Name</h3>
     </header>
 
     <nav class="navigation">
-        <a><img src="svgs/home.svg" alt="home"></a>
-        <a><img src="svgs/bar-chart.svg" alt="bar chart"></a>
-        <a><img src="svgs/members.svg" alt="members"></a>
-        <a><img src="svgs/settings.svg" alt="settings"></a>
+        <a href="#"><img src="svgs/home.svg" alt="home" class="nav-icon"></a>
+        <a href="#"><img src="svgs/bar-chart.svg" alt="bar chart" class="nav-icon"></a>
+        <a href="#"><img src="svgs/members.svg" alt="members" class="nav-icon"></a>
+        <a href="#"><img src="svgs/settings.svg" alt="settings" class="nav-icon"></a>
     </nav>
 
-    <main class="main">
+    <main class="main ">
         <div class="main-header">
             <h2 class="headline">Dashboard</h2>
             <div class="main-header-search">
@@ -79,7 +79,7 @@
 
         <!-- social stats -->
         <div class="social">
-            <h2>Social Stats</h2>
+            <h3>Social Stats</h3>
             <div class="social-container">
                 <div class="social-image">
                     <!-- inline SVG -->
@@ -114,31 +114,31 @@
             <h3>New Members</h3>
             <div class="members-container">
                 <img src="images/member-1.jpg" class="profile-image">
-                <div>
+                <div class="members-text">
                     <p>Victoria Chambers</p>
                     <p><a href="#">victoria.chambers80@example.com</a></p>
                 </div>                    
                 <p>10/15/20</p>
             </div>
-            <div class="new-member">
+            <div class="members-container">
                 <img src="images/member-2.jpg" class="profile-image">
-                <div>
+                <div class="members-text">
                     <p>Dale Byrd</p>
                     <p><a href="#">dale.byrd52@example.com</a></p>
-                </div>
+                </div class="members-text">
                 <p>10/15/20</p>
             </div>
-            <div class="new-member">
+            <div class="members-container">
                 <img src="images/member-3.jpg" class="profile-image">
-                <div>
+                <div class="members-text">
                     <p>Dawn Wood</p>
                     <p><a href="#">dawn.wood16@example.com</a></p>
                 </div>
                 <p>10/15/20</p>
             </div>
-            <div class="new-member">
+            <div class="members-container">
                 <img src="images/member-4.jpg" class="profile-image">
-                <div>
+                <div class="members-text">
                     <p>Dan Oliver</p>
                     <p><a href="#">dan.oliver82@example.com</a></p>
                 </div>
@@ -148,30 +148,30 @@
 
         <!-- recent activity widget -->
         <section class="activity">
-            <h3>RECENT ACTIVITY</h3>
-            <div>
-                <img src="images/member-1.jpg">
+            <h3>Recent Activity</h3>
+            <div class="members-container">
+                <img src="images/member-1.jpg" class="profile-image">
                 <div>
                     <p>Victoria Chambers commented on <strong>WebApp's SEO Tips</strong></p>
                     <p>4 hours ago</p>
                 </div>
             </div>
-            <div>
-                <img src="images/member-2.jpg">
+            <div class="members-container">
+                <img src="images/member-2.jpg" class="profile-image">
                 <div>
                     <p>Dale Byrd liked the post <strong>Facebook's Changes for 2021</strong></p>
                     <p>5 hours ago</p>
                 </div>
             </div>
-            <div>
-                <img src="images/member-3.jpg">
+            <div class="members-container">
+                <img src="images/member-3.jpg" class="profile-image">
                 <div>
                     <p>Dawn Wood commented on <strong>Facebook's Changes for 2021</strong></p>
                     <p>5 hours ago</p>
                 </div>
             </div>
-            <div>
-                <img src="images/member-4.jpg">
+            <div class="members-container">
+                <img src="images/member-4.jpg" class="profile-image">
                 <div>
                     <p>Dan Oliver posted <strong>WebApp's SEO Tips</strong></p>
                     <p>1 day ago</p>

@@ -1,18 +1,13 @@
 .grid-container {
+    height: 100vh;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
+    grid-gap: 10px;
     grid-template-areas: 
         "header"
-        "navigation"
+        "nav"
         "main";
-}
-
-.box {
-    box-sizing: border-box;
-    border: 5px;
-    padding: 5px;
-    margin: 5px;
 }
 
 ul, li, ol {
@@ -25,33 +20,79 @@ h3 {
     padding: 20px;
 }
 
-.header, .navigation, .main {
-    margin: 0px auto;
+img {
+    width: 100px;
 }
 
-.header {
+svg {
+    width: 100px;
+    border: 0px;
+    padding: 5px;
+    margin: 0px 20px;
+}
+
+/* Header */
+
+header {
     grid-area: header;
     background-color: aqua;
-    display: flex;    
+    display: flex;
+    justify-content: space-around;
 }
 
-.navigation {
-    grid-area: navigation;
+header .item {
+    width: 80px;
+    padding: 5px;
+    margin: 10px;
+    border: 5px;
+}
+
+header .item-1 {
+    margin-right: auto;
+}
+
+header .item-4 {
+    padding-top: 25px ;
+}
+
+/* Navigation */
+nav {
+    grid-area: nav;
     background-color: yellow;   
-    display: flex; 
+    display: flex;
     justify-content: center;
 }
 
-.main {
+.nav-icon {
+    width: 40px;
+    padding: 5px;
+    margin: 5px;
+    border: 5px;
+}
+
+/* Main */
+main {
     display: grid;
     grid-area: main;
     background-color: yellowgreen;
     text-align: center;
 }
 
-img {
-    width: 100px;
+.traffic-nav {
+    display: flex;
+    justify-content: space-around;
 }
+
+.social-container {
+    text-align: left;
+    margin: 5px;
+    padding: 5px;
+    border: 20px;
+    border-color: pink;
+    display: flex;
+}
+
+/*    */
 
 .profile-image {
     border-radius: 50%;
@@ -76,6 +117,9 @@ img {
     width: 95vw;
 }
 
+
+
+
 @media (min-width: 768px) {
     .grid-container {
         grid-template-columns: 55px 1fr;
@@ -83,7 +127,7 @@ img {
             "header header"
             "navigation main";
     }
-    .main {
+    main {
         grid-template-columns: 50%;
         grid-template-areas: 
             "main-header main-header"
@@ -115,9 +159,7 @@ img {
     }
 
     /* navigation */
-    .navigation {
-        display: block; 
-    }
+
     .nav-icon {
         width: 35px;
         margin: 10px 0px;

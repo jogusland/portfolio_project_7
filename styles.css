@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
-    grid-gap: 10px;
+    grid-gap: 5px;
     grid-template-areas: 
         "header"
         "nav"
@@ -12,6 +12,10 @@
 
 ul, li, ol {
     list-style-type: none;
+}
+
+p {
+    margin: 5px;
 }
 
 h3 {
@@ -41,7 +45,7 @@ header {
 }
 
 header .item {
-    width: 80px;
+    width: 70px;
     padding: 5px;
     margin: 10px;
     border: 5px;
@@ -51,9 +55,19 @@ header .item-1 {
     margin-right: auto;
 }
 
-header .item-4 {
-    padding-top: 25px ;
+header .item-2 {
+    width: 35px;
+    margin: 20px 0px;
+    padding: 10px;
 }
+
+header .item-4 {
+    padding-top: 24px ;
+    padding-left: 0px;
+    width: 100px;
+}
+
+
 
 /* Navigation */
 nav {
@@ -83,14 +97,20 @@ main {
     justify-content: space-around;
 }
 
-.social-container {
+div .social-container {
+    border-width: 10px;
+    display: flex;
     text-align: left;
     margin: 5px;
     padding: 5px;
-    border: 20px;
-    border-color: pink;
-    display: flex;
+    border: 5px;
 }
+
+div .social-text {
+    font-size: 40px;
+    letter-spacing: 8px;
+}
+
 
 /*    */
 
@@ -125,7 +145,7 @@ main {
         grid-template-columns: 55px 1fr;
         grid-template-areas:
             "header header"
-            "navigation main";
+            "nav main";
     }
     main {
         grid-template-columns: 50%;
@@ -134,7 +154,8 @@ main {
             "traffic traffic"
             "daily mobile"
             "social social"
-            "members activity"
+            "members members"
+            "activity activity"
             "message settings";
     }
 
@@ -142,11 +163,19 @@ main {
         grid-column: 1 / span 2;
     }
 
-    .daily, .members, .message {
+    .daily {
         grid-column: 1 / span 1;
     }
 
-    .mobile, .activity, .settings {
+    .settings, .message {
+        grid-column: 1 / span 2;
+    }
+
+    .members, .activity {
+        grid-column: 1 / span 2;
+    }
+
+    .mobile {
         grid-column: 2 / span 1;
     }
 
@@ -160,9 +189,62 @@ main {
 
     /* navigation */
 
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    svg {
+        width: 60px;
+    }
+
+    div .social-text {
+        font-size: 25px;
+        letter-spacing: 4px;
+    }
+
     .nav-icon {
         width: 35px;
-        margin: 10px 0px;
+        margin: 10px 5px;
+    }
+
+    .social-div {
+        display: flex;
+    }
+
+}
+
+
+@media (min-width: 1024) {
+    .grid-container {
+        grid-template-columns: 55px 1fr;
+        grid-template-areas:
+            "header header"
+            "nav main";
+    }
+
+    main {
+        grid-template-columns: 50%;
+        grid-template-areas: 
+            "main-header main-header"
+            "traffic traffic"
+            "daily mobile"
+            "social social"
+            "members activity"
+            "message settings";
+    }
+
+    .main-header, .traffic, .social {
+        grid-column: 1 / span 2;
+    }
+
+    .members, .message, .daily {
+        grid-column: 1 / span 1;
+    }
+
+    .activity, .settings, .mobile {
+        grid-column: 2 / span 1;
     }
 
 }

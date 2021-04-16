@@ -211,8 +211,9 @@ div .social-text {
 
     .social-div {
         display: flex;
+        justify-content: space-around;
     }
-
+    
 }
 
 

@@ -112,6 +112,8 @@ div .social-text {
 }
 
 
+
+
 /*    */
 
 .profile-image {
@@ -149,14 +151,6 @@ div .social-text {
     }
     main {
         grid-template-columns: 50%;
-        grid-template-areas: 
-            "main-header main-header"
-            "traffic traffic"
-            "daily mobile"
-            "social social"
-            "members members"
-            "activity activity"
-            "message settings";
     }
 
     .traffic, .social, .main-header{
@@ -217,7 +211,7 @@ div .social-text {
 }
 
 
-@media (min-width: 1024) {
+@media (min-width: 1024px) {
     .grid-container {
         grid-template-columns: 55px 1fr;
         grid-template-areas:
@@ -227,13 +221,6 @@ div .social-text {
 
     main {
         grid-template-columns: 50%;
-        grid-template-areas: 
-            "main-header main-header"
-            "traffic traffic"
-            "daily mobile"
-            "social social"
-            "members activity"
-            "message settings";
     }
 
     .main-header, .traffic, .social {

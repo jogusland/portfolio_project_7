@@ -35,6 +35,17 @@ svg {
     margin: 0px 20px;
 }
 
+.alert-banner {
+    margin: 20px;
+    padding: 5px;
+    border: 5px;
+    background-color: rgb(117, 182, 251);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 /* Header */
 
 header {

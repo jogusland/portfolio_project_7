@@ -46,6 +46,10 @@ svg {
     justify-content: space-between;
 }
 
+.alert-banner p {
+    font-size: 20px;
+}
+
 /* Header */
 
 header {
@@ -85,11 +89,11 @@ nav {
     grid-area: nav;
     background-color: yellow;   
     display: flex;
-    justify-content: center;
+    justify-content:space-evenly;
 }
 
 .nav-icon {
-    width: 40px;
+    width: 55px;
     padding: 5px;
     margin: 5px;
     border: 5px;

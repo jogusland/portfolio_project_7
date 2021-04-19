@@ -82,18 +82,30 @@ header .item-4 {
     width: 100px;
 }
 
+.dashboard-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.dash-item {
+    padding: 10px;
+}
+
+.main-header-search {
+    margin: auto 0px;
+}
 
 
 /* Navigation */
 nav {
     grid-area: nav;
-    background-color: yellow;   
+    background-color: yellow;  
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
 }
 
 .nav-icon {
-    width: 55px;
+    width: 50px;
     padding: 5px;
     margin: 5px;
     border: 5px;
@@ -126,8 +138,22 @@ div .social-text {
     letter-spacing: 8px;
 }
 
+.settings-button button {
+    padding: 10px;
+    margin: 10px;
+    width: 25vh;
+    height: 90px;
+    border-radius: 10px;
+    font-size: 27px;
+}
 
-
+select#timezone.form-field {
+    width: 52vh;
+    height: 75px;
+    border-radius: 10px;
+    font-size: 17px;
+    padding: 20px;
+}
 
 /*    */
 
@@ -137,8 +163,8 @@ div .social-text {
 
 .members-container {
     border: 10px;
-    margin: 10px;
-    padding: 10px;
+    margin: 30px;
+    padding: 20px;
     border-bottom: 5px solid red;
 }
 
@@ -154,7 +180,29 @@ div .social-text {
     width: 95vw;
 }
 
+#send {
+    border-radius: 8px;
+    height: 50px;
+    font-size: 20px;
+    margin: 10px;
+}
 
+.message #userField,
+.message #messageField
+{
+    margin: 8px;
+    padding: 5px;
+    border: 5px;
+    border-radius: 5px;
+}
+
+.message #userField {
+    height: 30px;
+}
+
+.message #messageField {
+    height: 100px;
+}
 
 
 @media (min-width: 768px) {

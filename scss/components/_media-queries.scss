@@ -1,0 +1,94 @@
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 55px 1fr;
+        grid-template-areas:
+            "header header"
+            "nav main";
+    }
+    main {
+        grid-template-columns: 50%;
+    }
+
+    .traffic, .social, .main-header{
+        grid-column: 1 / span 2;
+    }
+
+    .daily {
+        grid-column: 1 / span 1;
+    }
+
+    .settings, .message {
+        grid-column: 1 / span 2;
+    }
+
+    .members, .activity {
+        grid-column: 1 / span 2;
+    }
+
+    .mobile {
+        grid-column: 2 / span 1;
+    }
+
+    .widget-container-full {
+        width: 90vw;
+    }
+
+    .widget-container-half {
+        width: 45vw;
+    }
+
+    /* navigation */
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    svg {
+        width: 60px;
+    }
+
+    div .social-text {
+        font-size: 25px;
+        letter-spacing: 4px;
+    }
+
+    .nav-icon {
+        width: 35px;
+        margin: 10px 5px;
+    }
+
+    .social-div {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+}
+
+
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: 55px 1fr;
+        grid-template-areas:
+            "header header"
+            "nav main";
+    }
+
+    main {
+        grid-template-columns: 50%;
+    }
+
+    .main-header, .traffic, .social {
+        grid-column: 1 / span 2;
+    }
+
+    .members, .message, .daily {
+        grid-column: 1 / span 1;
+    }
+
+    .activity, .settings, .mobile {
+        grid-column: 2 / span 1;
+    }
+
+}

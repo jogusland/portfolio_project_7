@@ -1,12 +1,16 @@
 button {
-    background-color: rgba(11, 86, 237, 0.797);
+    background-color: $main-color;
 }
 
 .settings-button button {
     padding: 10px;
     margin: 10px;
-    width: 25vh;
+    width: 190px;
     height: 90px;
     border-radius: 10px;
     font-size: 27px;
+}
+
+button {
+    background-color: $main-color;
 }

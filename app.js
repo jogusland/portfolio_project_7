@@ -1,9 +1,10 @@
 const alertBanner = document.getElementById("alert");
+const tasks = 6;
 
-//create the html for the banner
+//html for the banner
 alertBanner.innerHTML = `
     <div class="alert-banner">
-        <p><strong>Alert:</strong> You have <strong>6</strong> overdue tasks to complete</p>
+        <p><strong>Alert:</strong> You have <strong>${tasks}</strong> overdue tasks to complete</p>
         <p class="alert-banner-close">x</p>
     </div>
     `;
@@ -135,3 +136,16 @@ send.addEventListener('click', () => {
   } else {
     alert(`Message successfully sent to: ${user.value}`);
 } });
+
+
+//green dot
+// if tasks > 0 display green dot
+// if tasks = 0 display nothing
+
+const greenDot = document.getElementById('green-dot');
+
+if (tasks > 0) {
+  greenDot.style.display = block;
+} else if (tasks === 0){
+  greenDot.style.display = "none";
+}

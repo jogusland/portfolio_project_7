@@ -352,8 +352,6 @@ ul, li, ol {
 }
 
 main {
-  display: grid;
-  grid-area: main;
   text-align: center;
 }
 
@@ -365,6 +363,7 @@ h3 {
   text-transform: uppercase;
   text-align: left;
   padding: 20px;
+  margin: 30px 0px 0px 0px;
 }
 
 img {
@@ -372,10 +371,16 @@ img {
 }
 
 svg {
-  width: 100px;
+  width: 90px;
   border: 0px;
   padding: 5px;
   margin: 0px 20px;
+}
+
+canvas {
+  padding: 5px;
+  margin: 5px;
+  border: 5px;
 }
 
 /* ============================================= */
@@ -417,7 +422,7 @@ header .item-1 {
 header .item-2 {
   width: 35px;
   margin: 20px 0px;
-  padding: 10px;
+  padding: 10px 0px;
 }
 
 header .item-4 {
@@ -465,12 +470,12 @@ header .item-4 {
 }
 
 div .social-text {
-  font-size: 40px;
+  font-size: 30px;
   letter-spacing: 8px;
 }
 
 .social-text p:first-child {
-  font-size: 35px;
+  font-size: 24px;
 }
 
 button {
@@ -507,12 +512,18 @@ select#timezone.form-field {
   grid-template-areas: "header" "nav" "main";
 }
 
+main {
+  display: grid;
+  grid-area: main;
+  grid-template-columns: 100%;
+}
+
 div .social-container {
   border-width: 10px;
   display: flex;
   text-align: left;
   margin: 5px;
-  padding: 5px;
+  padding: 0px;
   border: 5px;
 }
 
@@ -540,8 +551,26 @@ div .social-container {
   flex-direction: row;
 }
 
+#daily-chart {
+  margin-top: 100px;
+}
+
+.green-dot-container {
+  height: 10px;
+  width: 10px;
+}
+
 .profile-image {
   border-radius: 50%;
+}
+
+header #green-dot {
+  height: 10px;
+  width: 10px;
+  background-color: greenyellow;
+  color: greenyellow;
+  border-radius: 50%;
+  margin-top: 20px;
 }
 
 @media (min-width: 768px) {
@@ -605,6 +634,7 @@ div .social-container {
 
   .social-div {
     display: flex;
+    margin: 20px 0px;
     justify-content: space-around;
   }
 }

@@ -1,0 +1,11 @@
+header .item-2:hover {
+    transition-duration: .1s;
+}
+
+header .item-2:hover {
+    transform: rotate(-20deg) scale(1.19);
+}
+
+button:hover {
+    color: invert($color: #000000);
+}

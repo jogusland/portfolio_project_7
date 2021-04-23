@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/output.css">
-    <link rel="stylesheet" href="css/css-toggle-switch-master/dist/toggle-switch.css">
+    <link rel="stylesheet" href="css/dist/toggle-switch.css">
     <title>Document</title>
 </head>
 
@@ -215,22 +215,35 @@
         <section class="settings">
             <h3>Settings</h3>
             <!-- custom CSS toggle code-->
-            <fieldset>
-                <legend>View</legend>
-                <div class="switch-toggle switch-candy switch-ios">
-                  <input id="week" name="view" type="radio" checked>
-                  <label for="week" onclick="">Week</label>
-              
-                  <input id="month" name="view" type="radio">
-                  <label for="month" onclick="">Month</label>
-                  <a></a>
-                </div>
-            </fieldset>
+            <label class="switch-light switch-ios">
+                <input type="checkbox">
+                <strong>
+                    Send Email Notifications
+                </strong>
+                <span class="item">
+                    <span>Off</span>
+                    <span>On</span>
+                    <a></a>
+                </span>
+            </label> 
+
+            <label class="switch-light switch-ios">
+                <input type="checkbox">
+                <strong>
+                    Set Profile to Public
+                </strong>
+                <span class="item">
+                    <span>Off</span>
+                    <span>On</span>
+                    <a></a>
+                </span>
+            </label>
             <!-- custom CSS toggle code-->
             
             <select class="form-field" id="timezone">
                 <option disabled selected>Select a Timezone</option>
                 <option>Eastern</option>
+                <option>Western</option>
                 <!-- more options -->
             </select>
             <div class="settings-button">

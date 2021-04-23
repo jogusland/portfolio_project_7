@@ -478,6 +478,12 @@ div .social-text {
   font-size: 24px;
 }
 
+.switch-light {
+  width: 90px;
+  margin: 5px;
+  display: flex;
+}
+
 header .item-2:hover {
   transition-duration: 0.1s;
 }
@@ -532,11 +538,16 @@ main {
 
 div .social-container {
   border-width: 10px;
+  width: 250px;
+  height: 80px;
   display: flex;
   text-align: left;
   margin: 5px;
   padding: 0px;
-  border: 5px;
+  border: 2.5px solid #bdbcbc;
+  background-color: lightgrey;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .members-container {

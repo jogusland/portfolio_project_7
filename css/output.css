@@ -638,7 +638,6 @@ header #green-dot {
   nav {
     display: flex;
     flex-direction: column;
-    justify-content: center;
   }
 
   svg {
@@ -687,7 +686,7 @@ nav {
   grid-area: nav;
   background-color: #2465ab;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 img.nav-icon {

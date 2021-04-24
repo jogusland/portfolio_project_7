@@ -538,8 +538,9 @@ main {
 
 div .social-container {
   border-width: 10px;
-  width: 250px;
-  height: 80px;
+  width: 55vw;
+  min-width: 350px;
+  height: 14vh;
   display: flex;
   text-align: left;
   margin: 5px;
@@ -637,15 +638,21 @@ header #green-dot {
   /* navigation */
   nav {
     flex-direction: column;
+    justify-content: flex-start;
   }
 
   svg {
     width: 60px;
+    margin: 0px 0px;
   }
 
   div .social-text {
-    font-size: 25px;
+    font-size: 1.2em;
     letter-spacing: 4px;
+  }
+
+  div .social-image {
+    width: 90px;
   }
 
   .nav-icon {
@@ -657,6 +664,13 @@ header #green-dot {
     display: flex;
     margin: 20px 0px;
     justify-content: space-around;
+  }
+
+  div .social-container {
+    width: 10vw;
+    min-width: 210px;
+    max-width: 50px;
+    max-height: 80px;
   }
 }
 @media (min-width: 1024px) {
@@ -685,7 +699,7 @@ nav {
   grid-area: nav;
   background-color: #2465ab;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 img.nav-icon {

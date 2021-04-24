@@ -42,15 +42,21 @@
 
     nav {
         flex-direction: column;
+        justify-content: flex-start;
     }
 
     svg {
         width: 60px;
+        margin: 0px 0px;
     }
 
     div .social-text {
-        font-size: 25px;
+        font-size: 1.2em;
         letter-spacing: 4px;
+    }
+
+    div  .social-image {
+        width: 90px;
     }
 
     .nav-icon {
@@ -62,6 +68,13 @@
         display: flex;
         margin: 20px 0px;
         justify-content: space-around;
+    }
+
+    div .social-container {
+        width: 10vw;
+        min-width: 210px;
+        max-width: 50px;
+        max-height: 80px;
     }
     
 }

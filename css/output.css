@@ -636,7 +636,6 @@ header #green-dot {
 
   /* navigation */
   nav {
-    display: flex;
     flex-direction: column;
   }
 

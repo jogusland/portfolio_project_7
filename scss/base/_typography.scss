@@ -24,8 +24,8 @@ p {
 h3 {
     text-transform: uppercase;
     text-align: left;
-    padding: 20px;
-    margin: 30px 0px 0px 0px;
+    padding: 10px;
+    margin: 15px 0px 15px 0px;
 }
 
 img {
@@ -74,27 +74,57 @@ button p {
     fill: $main-color;
 }
 
+.social-image {
+    background-color: $main-color;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.social-image svg {
+    width: 45px;
+    fill: white;
+    margin: 0px;
+    padding: 16px;
+}
+
+.traffic-header h3{
+    display: block;
+}
+
 header .item {
-    width: 70px;
-    padding: 5px;
-    margin: 10px;
-    border: 5px;
+    width: 15%;
+    padding: 2px;
+    margin: 10px 5px;
+    border: 2px;
 }
 
 header .item-1 {
     margin-right: auto;
+    margin-top: 10px;
+    font-size: 25px;
 }
 
 header .item-2 {
-    width: 35px;
-    margin: 20px 0px;
-    padding: 10px 0px;
+    margin: 13px 0px 0px 0px;
+    width: 22px;
+}
+
+header .item-3 {
+    max-width: 80px;
+    min-width: 35px;
+    width: 38px;
+    height: 38px;
+    margin: 4px 0px 0px 0px;
+
 }
 
 header .item-4 {
-    padding-top: 24px ;
-    padding-left: 0px;
-    width: 100px;
+    padding: 10px 0px;
+    font-size: 12px;
+    width: 80px;
 }
 
 #send {
@@ -121,7 +151,7 @@ header .item-4 {
 }
 
 .alert-banner p {
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .alert-banner {
@@ -138,16 +168,22 @@ header .item-4 {
 div .social-text {
     font-size: 30px;
     letter-spacing: 8px;
+    margin: 17px 0px;
 }
 
 .social-text p:first-child {
     font-size: 24px;
 }
 
-.switch-light {
-    width: 90px;
+.switch-light strong {
+    width: 220px;
     margin: 5px;
     display: flex;
+}
+
+label.switch-light {
+    width: 90px;
+    margin: 10px;
 }
 
 

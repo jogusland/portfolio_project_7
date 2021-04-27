@@ -3,7 +3,6 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
-    grid-gap: 5px;
     grid-template-areas: 
         "header"
         "nav"
@@ -18,9 +17,9 @@ main {
 
 div .social-container {
     border-width: 10px;
-    width: 55vw;
-    min-width: 350px;
-    height: 14vh;
+    width: 20vw;
+    min-width: 319px;
+    height: 12.5vh;
     display: flex;
     text-align: left;
     margin: 5px;
@@ -36,6 +35,11 @@ div .social-container {
     margin: 30px;
     padding: 20px;
     border-bottom: 5px solid rgb(200, 200, 200);
+}
+
+.daily,
+.mobile {
+    border: 3px solid lightgrey;
 }
 
 .widget-container {
@@ -62,4 +66,5 @@ div .social-container {
 .green-dot-container {
     height: 10px;
     width: 10px;
+    margin: 5px;
 }

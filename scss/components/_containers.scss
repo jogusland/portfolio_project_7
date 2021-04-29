@@ -30,16 +30,47 @@ div .social-container {
     text-align: center;
 }
 
-.members-container {
-    border: 10px;
-    margin: 30px;
-    padding: 20px;
-    border-bottom: 5px solid rgb(200, 200, 200);
+.members {
+    border-top: 3px solid lightgrey;
+    border-right: 2px solid lightgrey;
+    border-bottom: 3px solid lightgrey;
 }
 
-.daily,
+.activity {
+    border-top: 3px solid lightgrey;
+    border-left: 2px solid lightgrey;
+    border-bottom: 3px solid lightgrey;
+}
+
+.members-container {
+    border: 0px;
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 2px solid rgb(200, 200, 200);
+}
+
+.members-container:last-child{
+    border-bottom: 0px;
+}
+
+.daily {
+    border-top: 3px solid lightgrey;
+    border-right: 2px solid lightgrey;
+    border-bottom: 3px solid lightgrey;
+}
+
 .mobile {
-    border: 3px solid lightgrey;
+    border-top: 3px solid lightgrey;
+    border-left: 2px solid lightgrey;
+    border-bottom: 3px solid lightgrey;
+}
+
+.message {
+    border-right: 2px solid lightgrey;
+}
+
+.settings {
+    border-left: 2px solid lightgrey;
 }
 
 .widget-container {

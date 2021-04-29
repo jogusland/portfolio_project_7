@@ -106,6 +106,28 @@
         margin: 0px 30px;
         padding: 20px 0px;
     }
+
+    .members .members-container {
+        display: flex;
+    }
+
+    .members-text {
+        padding: 0px;
+        margin: 20px;
+        margin-right: auto;
+    }
+
+    .profile-image {
+        margin: 5px;
+    }
+
+    .members-container p:last-child {
+        margin: auto 0px;
+    }
+
+    .activity .members-container {
+        display: grid;
+    }
     
 }
 

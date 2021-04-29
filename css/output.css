@@ -414,7 +414,7 @@ button p {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  margin: 20px;
+  margin: 10px;
 }
 
 .social-image svg {
@@ -501,7 +501,7 @@ header .item-4 {
 div .social-text {
   font-size: 30px;
   letter-spacing: 8px;
-  margin: 17px 0px;
+  margin: 10px 0px;
 }
 
 .social-text p:first-child {
@@ -548,16 +548,47 @@ div .social-container {
   text-align: center;
 }
 
-.members-container {
-  border: 10px;
-  margin: 30px;
-  padding: 20px;
-  border-bottom: 5px solid #c8c8c8;
+.members {
+  border-top: 3px solid lightgrey;
+  border-right: 2px solid lightgrey;
+  border-bottom: 3px solid lightgrey;
 }
 
-.daily,
+.activity {
+  border-top: 3px solid lightgrey;
+  border-left: 2px solid lightgrey;
+  border-bottom: 3px solid lightgrey;
+}
+
+.members-container {
+  border: 0px;
+  margin: 10px;
+  padding: 10px;
+  border-bottom: 2px solid #c8c8c8;
+}
+
+.members-container:last-child {
+  border-bottom: 0px;
+}
+
+.daily {
+  border-top: 3px solid lightgrey;
+  border-right: 2px solid lightgrey;
+  border-bottom: 3px solid lightgrey;
+}
+
 .mobile {
-  border: 3px solid lightgrey;
+  border-top: 3px solid lightgrey;
+  border-left: 2px solid lightgrey;
+  border-bottom: 3px solid lightgrey;
+}
+
+.message {
+  border-right: 2px solid lightgrey;
+}
+
+.settings {
+  border-left: 2px solid lightgrey;
 }
 
 .widget-container {
@@ -813,6 +844,28 @@ button:hover {
   li.traffic-nav-link {
     margin: 0px 30px;
     padding: 20px 0px;
+  }
+
+  .members .members-container {
+    display: flex;
+  }
+
+  .members-text {
+    padding: 0px;
+    margin: 20px;
+    margin-right: auto;
+  }
+
+  .profile-image {
+    margin: 5px;
+  }
+
+  .members-container p:last-child {
+    margin: auto 0px;
+  }
+
+  .activity .members-container {
+    display: grid;
   }
 }
 @media (min-width: 1024px) {

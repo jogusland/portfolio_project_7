@@ -143,14 +143,23 @@
         justify-self: start;
     }
 
+    .activity .item-d {
+        padding-top: 45px;
+        justify-self: end;
+    }
+
     .activity .members-container {
         display: grid;
-        grid-template-columns: 120px 400px;
+        grid-template-columns: 120px 70vw 20px;
         grid-template-rows: auto;
         grid-template-areas: 
-            "item-a item-b"
-            "item-a item-c";
+            "item-a item-b item-d"
+            "item-a item-c item-d";
 
+    }
+
+    .activity .members-container p:last-child {
+        display: block;
     }
 
     
@@ -190,6 +199,10 @@
         margin: 8px;
     }
 
+    //activity
+    .activity .members-container {
+        grid-template-columns: 120px 30vw 20px;
+    }
     
     
 }

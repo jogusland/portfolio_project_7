@@ -15,6 +15,7 @@ ul, li, ol {
 
 main {
     text-align: center;
+    width: 100%;
 }
 
 p {
@@ -26,6 +27,12 @@ h3 {
     text-align: left;
     padding: 10px;
     margin: 15px 0px 15px 0px;
+    width: 299px;
+}
+
+#mobile-chart {
+    height: 320px;
+    width: 320px;
 }
 
 img {
@@ -179,6 +186,9 @@ div .social-text {
     width: 20%;
 }
 
+.activity .members-container p:last-child {
+    display: none;
+}
 
 
 

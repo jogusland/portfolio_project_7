@@ -353,6 +353,7 @@ ul, li, ol {
 
 main {
   text-align: center;
+  width: 100%;
 }
 
 p {
@@ -364,6 +365,12 @@ h3 {
   text-align: left;
   padding: 10px;
   margin: 15px 0px 15px 0px;
+  width: 299px;
+}
+
+#mobile-chart {
+  height: 320px;
+  width: 320px;
 }
 
 img {
@@ -512,6 +519,10 @@ div .social-text {
   width: 20%;
 }
 
+.activity .members-container p:last-child {
+  display: none;
+}
+
 .grid-container {
   height: 100vh;
   display: grid;
@@ -528,8 +539,8 @@ main {
 
 div .social-container {
   border-width: 10px;
-  width: 20vw;
-  min-width: 319px;
+  width: 90vw;
+  min-width: 90vw;
   height: 12.5vh;
   display: flex;
   text-align: left;
@@ -874,11 +885,20 @@ button:hover {
     justify-self: start;
   }
 
+  .activity .item-d {
+    padding-top: 45px;
+    justify-self: end;
+  }
+
   .activity .members-container {
     display: grid;
-    grid-template-columns: 120px 400px;
+    grid-template-columns: 120px 70vw 20px;
     grid-template-rows: auto;
-    grid-template-areas: "item-a item-b" "item-a item-c";
+    grid-template-areas: "item-a item-b item-d" "item-a item-c item-d";
+  }
+
+  .activity .members-container p:last-child {
+    display: block;
   }
 }
 @media (min-width: 1024px) {
@@ -910,6 +930,10 @@ button:hover {
 
   div .social-text {
     margin: 8px;
+  }
+
+  .activity .members-container {
+    grid-template-columns: 120px 30vw 20px;
   }
 }
 

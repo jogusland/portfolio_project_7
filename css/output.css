@@ -517,10 +517,22 @@ div .social-text {
 
 .switch-light {
   width: 20%;
+  margin-bottom: 10px;
 }
 
 .activity .members-container p:last-child {
   display: none;
+}
+
+.switch-light strong {
+  display: block;
+  width: 200px;
+}
+
+span.item {
+  position: absolute;
+  left: 230px;
+  bottom: 24px;
 }
 
 .grid-container {
@@ -603,8 +615,12 @@ div .social-container {
   margin: 0px auto;
 }
 
-.widget-container-full, .widget-container-half {
+.widget-container-full {
   width: 95vw;
+}
+
+.widget-container-half {
+  width: 90vw;
 }
 
 .dashboard-container {

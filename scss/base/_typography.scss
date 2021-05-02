@@ -184,10 +184,22 @@ div .social-text {
 
 .switch-light {
     width: 20%;
+    margin-bottom: 10px;
 }
 
 .activity .members-container p:last-child {
     display: none;
+}
+
+.switch-light strong {
+    display: block;
+    width: 200px;
+}
+
+span.item {
+    position: absolute;
+    left: 230px;
+    bottom: 24px;
 }
 
 

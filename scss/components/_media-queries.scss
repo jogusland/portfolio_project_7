@@ -50,10 +50,26 @@
         margin: 0px 0px;
     }
 
+    .social {
+        width: 95%;
+    }
+
+    header {
+        width: 100%;
+    }
+
     .social-div {
+        width: 100%;
         display: flex;
         margin: 20px 0px;
         justify-content: space-around;
+    }
+
+    div .social-container {
+        width: 100%;
+        min-width: 150px;
+        max-width: 230px;
+        max-height: 80px;
     }
 
     div .social-image {
@@ -72,21 +88,16 @@
         margin: 4px 0px;
     }
 
-    img.nav-icon {
-        width: 35px;
-        margin: 15px 5px;
-        padding: 5px;
-    }
-
     div .social-text p:last-of-type {
         font-size: 1.5em;
     }
 
-    div .social-container {
-        width: 26vw;
-        min-width: 210px;
-        max-width: 230px;
-        max-height: 80px;
+    
+
+    img.nav-icon {
+        width: 35px;
+        margin: 15px 5px;
+        padding: 5px;
     }
 
     .traffic-header h3{
@@ -109,6 +120,7 @@
 
     .members .members-container {
         display: flex;
+        width: 90%;
     }
 
     .members-text {
@@ -117,13 +129,13 @@
         margin-right: auto;
     }
 
-    .profile-image {
-        margin: 5px;
-    }
-
     .members-container p:last-child {
         margin: auto 0px;
     }
+
+    .profile-image {
+        margin: 5px;
+    }  
 
     // activity container
     .activity .item-a {
@@ -150,7 +162,7 @@
 
     .activity .members-container {
         display: grid;
-        grid-template-columns: 120px 70vw 20px;
+        grid-template-columns: 120px 70% 20px;
         grid-template-rows: auto;
         grid-template-areas: 
             "item-a item-b item-d"

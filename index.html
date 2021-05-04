@@ -34,13 +34,13 @@
             <a href="#"><img src="svgs/home.svg" alt="home" class="nav-icon"></a>
         </div>
         <div>
-            <a href="#"><img src="svgs/bar-chart.svg" alt="bar chart" class="nav-icon"></a>
+            <a href="#daily"><img src="svgs/bar-chart.svg" alt="bar chart" class="nav-icon"></a>
         </div>
         <div>
-            <a href="#"><img src="svgs/members.svg" alt="members" class="nav-icon"></a>
+            <a href="#members"><img src="svgs/members.svg" alt="members" class="nav-icon"></a>
         </div>
         <div>
-            <a href="#"><img src="svgs/settings.svg" alt="settings" class="nav-icon"></a>
+            <a href="#settings"><img src="svgs/settings.svg" alt="settings" class="nav-icon"></a>
         </div>
     </nav>
 
@@ -49,7 +49,7 @@
             <div class="dashboard-container">
                 <h2 class="headline dash-item">Dashboard</h2>
                 <div class="main-header-search dash-item">
-                    <input type="search" placeholder="Search..."/>
+                    <input type="search" placeholder=""/>
                 </div>
             </div>
             
@@ -78,7 +78,7 @@
 
         <!-- bar graph -->
 
-        <section class="daily">
+        <section class="daily" id="daily">
             <h3>Daily Traffic</h3>
             <div class="widget-container-half">
                 <canvas id="daily-chart"></canvas>
@@ -136,7 +136,7 @@
         </div>
         
         <!-- new members widget -->
-        <section class="members">
+        <section class="members" id="members">
             <h3>New Members</h3>
             <div class="members-container">
                 <img src="images/member-1.jpg" class="profile-image">
@@ -212,7 +212,7 @@
         </section>
 
         <!-- settings -->
-        <section class="settings">
+        <section class="settings" id="settings">
             <h3>Settings</h3>
             <!-- custom CSS toggle code-->
             <label class="switch-light switch-ios" for="check1">

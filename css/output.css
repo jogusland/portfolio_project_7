@@ -488,6 +488,12 @@ header .item-4 {
 
 .main-header-search {
   margin: auto 0px;
+  width: 70%;
+}
+
+.main-header-search input {
+  width: 100%;
+  height: 60px;
 }
 
 .alert-banner p {
@@ -495,7 +501,7 @@ header .item-4 {
 }
 
 .alert-banner {
-  margin: 20px;
+  margin: 20px auto;
   padding: 5px;
   border: 5px;
   background-color: rgba(83, 96, 239, 0.825);
@@ -503,6 +509,7 @@ header .item-4 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 85%;
 }
 
 div .social-text {
@@ -551,9 +558,9 @@ main {
 
 div .social-container {
   border-width: 10px;
-  width: 90vw;
-  min-width: 90vw;
-  height: 12.5vh;
+  width: 90%;
+  min-width: 90%;
+  height: 110px;
   display: flex;
   text-align: left;
   margin: 5px;
@@ -809,10 +816,26 @@ button:hover {
     margin: 0px 0px;
   }
 
+  .social {
+    width: 95%;
+  }
+
+  header {
+    width: 100%;
+  }
+
   .social-div {
+    width: 100%;
     display: flex;
     margin: 20px 0px;
     justify-content: space-around;
+  }
+
+  div .social-container {
+    width: 100%;
+    min-width: 150px;
+    max-width: 230px;
+    max-height: 80px;
   }
 
   div .social-image {
@@ -831,21 +854,14 @@ button:hover {
     margin: 4px 0px;
   }
 
-  img.nav-icon {
-    width: 35px;
-    margin: 15px 5px;
-    padding: 5px;
-  }
-
   div .social-text p:last-of-type {
     font-size: 1.5em;
   }
 
-  div .social-container {
-    width: 26vw;
-    min-width: 210px;
-    max-width: 230px;
-    max-height: 80px;
+  img.nav-icon {
+    width: 35px;
+    margin: 15px 5px;
+    padding: 5px;
   }
 
   .traffic-header h3 {
@@ -868,6 +884,7 @@ button:hover {
 
   .members .members-container {
     display: flex;
+    width: 90%;
   }
 
   .members-text {
@@ -876,12 +893,12 @@ button:hover {
     margin-right: auto;
   }
 
-  .profile-image {
-    margin: 5px;
-  }
-
   .members-container p:last-child {
     margin: auto 0px;
+  }
+
+  .profile-image {
+    margin: 5px;
   }
 
   .activity .item-a {
@@ -908,7 +925,7 @@ button:hover {
 
   .activity .members-container {
     display: grid;
-    grid-template-columns: 120px 70vw 20px;
+    grid-template-columns: 120px 70% 20px;
     grid-template-rows: auto;
     grid-template-areas: "item-a item-b item-d" "item-a item-c item-d";
   }

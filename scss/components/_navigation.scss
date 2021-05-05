@@ -1,9 +1,13 @@
+
+
+
 nav {
     grid-area: nav;
     background-color: rgb(36, 101, 171);  
     display: flex;
     justify-content: center;
 }
+
 
 img.nav-icon {
     width: 40px;
@@ -15,7 +19,7 @@ img.nav-icon {
 
 li.traffic-nav-link {
     margin: 0px auto;
-    padding: 20px 0px;
+    padding: 10px 0px;
 }
 
 .traffic-nav {

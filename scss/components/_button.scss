@@ -14,3 +14,7 @@ button {
 button {
     background-color: $main-color;
 }
+
+button p {
+    filter: invert(1); //makes the color white
+}

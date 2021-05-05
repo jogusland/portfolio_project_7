@@ -49,10 +49,6 @@ div .social-container {
     border-bottom: 2px solid rgb(200, 200, 200);
 }
 
-.members-container:last-child{
-    border-bottom: 0px;
-}
-
 .daily {
     border-top: 3px solid lightgrey;
     border-right: 2px solid lightgrey;
@@ -94,14 +90,10 @@ div .social-container {
     flex-direction: row;
 }
 
-#daily-chart {
-    margin-top: 100px;
-}
-
 .green-dot-container {
     height: 10px;
     width: 10px;
-    margin: 5px;
+    margin: 0px;
 }
 
 

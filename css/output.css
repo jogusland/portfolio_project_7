@@ -359,8 +359,7 @@ h3 {
   text-transform: uppercase;
   text-align: left;
   padding: 5px;
-  margin: 15px 0px 15px 0px;
-  width: 299px;
+  margin: 15px 0px;
 }
 
 ul, li, ol {
@@ -552,15 +551,10 @@ div .social-text {
   width: 200px;
 }
 
-.switch-light span.item {
-  width: 100px;
-}
-
 span.item {
   position: absolute;
   left: 180px;
   bottom: 22px;
-  width: 10px;
 }
 
 .grid-container {

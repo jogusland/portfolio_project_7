@@ -145,7 +145,7 @@ send.addEventListener('click', () => {
 const greenDot = document.getElementById('green-dot');
 
 if (tasks > 0) {
-  greenDot.style.display = block;
+  greenDot.style.display = "block";
 } else if (tasks === 0){
   greenDot.style.display = "none";
 }
